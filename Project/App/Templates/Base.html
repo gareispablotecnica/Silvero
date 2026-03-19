@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="encabezado">
+        <img src="{% static 'src/Logo.png' %}" alt="Logotipo">
+        <nav class="menu">
+            <a href="{% url 'Productos' %}">Productos</a>
+            <a href="">Nosotros</a>
+            {% block Pereyra %}
+            <a href="">Galeria</a>
+            {% endblock %}
+            <a href="">Contactos</a>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(4, 49, 4);
+}
+
+.encabezado img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.menu{
+    margin-right: 10px;
+    line-height: 80px;
+}
+
+.menu a{
+    margin-right: 10px;
+    color: wheat;
+    text-decoration: none;
+    font-size: 18px;
+}
