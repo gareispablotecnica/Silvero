@@ -6,7 +6,7 @@ def Home(request):
 
 def Productos(request):
     # ---> Guardamos todos los Productos en una variable
-    Villalva=Producto.objects.all().order_by[:3]
+    Villalva=Producto.objects.all()
     data={
         # ---> Enviamos todos los productos a la palabra reservada
         'tabla':Villalva

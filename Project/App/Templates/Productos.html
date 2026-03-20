@@ -2,11 +2,15 @@
 {% block Pereyra %}
 <a href="">Ugarte</a>
 {% endblock %}
-
-<!-- Recorremos cada elemento -->
-{% for i in tabla %}
-<!-- cargamos elemento por elemento -->
-    <h1>Name:{{ i.Nombre }}</h1>
-    <h2>Price:{{i.Precio}}</h2>
-    <h3>Quantity:{{i.Cantidad}}</h3>
-{% endfor %}
+{% block Productos %}
+    <!-- Recorremos cada elemento -->
+    <!-- i: cada uno de los elementos -->
+    {% for i in tabla %}
+        <!-- cargamos elemento por elemento -->
+        <h1>Name:{{i.Nombre}}</h1>
+        <h2>Price:{{i.Precio}}</h2>
+        <h3>Quantity:{{i.Cantidad}}</h3>
+    {% endfor %}
+{% endblock %}
+<!-- Callamullo & santi ♥ -->
+<!-- Battiston & kozak ♥  -->
